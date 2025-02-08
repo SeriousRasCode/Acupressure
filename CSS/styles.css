@@ -64,7 +64,7 @@ button:hover {
     height: auto;
     transition: transform 0.3s ease;
     cursor: pointer;
-    box-shadow:2px 1px rgb(39, 9, 9);
+    box-shadow:1px 1px rgb(106, 99, 99);
     border-color: #ffffff;
     border-style: solid;
     border-width: 2px;
