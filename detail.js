@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (partData) {
                 document.getElementById('title').textContent = partData.title + " " + appender;
                 document.getElementById('description').innerHTML = partData.description.replace(/\n/g, '<br>');
-                document.title.textContent = partData.title + " " + appender;
+                document.title = partData.title + " " + appender;
             } else {
                 document.getElementById('title').textContent = "መረጃ አልተገኘም";
                 document.getElementById('description').textContent = "ለዚህ ክፍል ማብራሪያ አልተገኘም።";
