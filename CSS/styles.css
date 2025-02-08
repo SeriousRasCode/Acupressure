@@ -63,7 +63,7 @@ button:hover {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
-    cursor:ew-resize;
+    cursor:crosshair;
     box-shadow:2px -1px 2px 1px rgb(24, 7, 7);
     border-radius: 8px;
 }
