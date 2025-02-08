@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const appender = this.querySelector("#title").textContent = num;
 
-    fetch('data.json')
+    fetch('Assets/data.json')
         .then(response => response.json())
         .then(data => {
             const partData = data[part];
