@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     const appender = this.querySelector("#title").textContent = num;
+    
 
     fetch('data.json')
         .then(response => response.json())
@@ -12,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const partData = data[part];
             if (partData) {
                 document.getElementById('title').textContent = partData.title + " " + appender;
-                document.getElementById('description').innerHTML = partData.description.replace(/\n/g, '<br>');;
+                document.getElementById('description').innerHTML = partData.description.replace(/\n/g, '<br>');
+                document.head.title.textContent = partData.title + " " + appender;
             } else {
                 document.getElementById('title').textContent = "መረጃ አልተገኘም";
                 document.getElementById('description').textContent = "ለዚህ ክፍል ማብራሪያ አልተገኘም።";
